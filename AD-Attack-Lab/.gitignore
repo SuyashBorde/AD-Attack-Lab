@@ -1,0 +1,20 @@
+# Never commit real captured credentials / hashes / tickets
+loot/*.txt
+loot/*.kirbi
+loot/*.ccache
+!loot/README.md
+
+# Nmap raw scan output (may contain internal IP/hostname detail you don't want public)
+*.xml
+dc01_scan.txt
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/settings.json
+
+# VirtualBox exports (too large for git; host separately if needed)
+*.ova
+*.vdi
+*.vbox
